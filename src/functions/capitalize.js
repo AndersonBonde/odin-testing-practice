@@ -1,9 +1,8 @@
 function capitalize(word) {
+  const copy = word.trim();
   let str = '';
 
-  word.trim().split('').forEach((cur, index) => {
-    if (index === 0) { str += cur.toUpperCase(); } else { str += cur.toLowerCase(); }
-  });
+  str = copy.charAt(0).toUpperCase() + copy.slice(1).toLowerCase();
 
   return str;
 }
