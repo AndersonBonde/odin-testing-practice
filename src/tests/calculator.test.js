@@ -39,3 +39,15 @@ test('Divide by negative', () => {
 test('Divide two negative numbers', () => {
   expect(calculator.divide(-8, -4)).toBe(2);
 });
+
+test('Multiply two positive numbers', () => {
+  expect(calculator.multiply(2, 5)).toBe(10);
+});
+
+test('Multiply positive with negative number', () => {
+  expect(calculator.multiply(3, -5)).toBe(-15);
+});
+
+test('Multiply two negative numbers', () => {
+  expect(calculator.multiply(-2, -6)).toBe(12);
+});
