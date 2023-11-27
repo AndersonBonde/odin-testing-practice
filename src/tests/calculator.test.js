@@ -27,3 +27,15 @@ test('Subtract a positive number from a negative number', () => {
 test('Subtract a negative number from a positive number', () => {
   expect(calculator.subtract(7, -2)).toBe(9);
 });
+
+test('Divide two numbers', () => {
+  expect(calculator.divide(5, 2)).toBe(2.5);
+});
+
+test('Divide by negative', () => {
+  expect(calculator.divide(10, -2)).toBe(-5);
+});
+
+test('Divide two negative numbers', () => {
+  expect(calculator.divide(-8, -4)).toBe(2);
+});
